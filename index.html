@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Ícaro Melo">
+		<title>Busca Marvel</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/app.css">
+
+	</head>
+	<body>
+		<header class="header-nav">
+			<div class="container align-vertical">
+        <a class="logo">
+          <img src="assets/img/marvel.svg" alt="">
+          <h1><strong>Busca</strong> | Teste Front-End</h1>
+        </a>
+        <small class="canditato">
+          Ícaro Melo
+        </small>
+			</div>
+		</header>
+
+    <section class="container">
+      <div class="busca">
+        <i class="lupa"><img src="assets/img/busca.svg" alt="ícone lupa"></i>
+        <input type="text" name="busca" id="busca-personagem" placeholder="Digite o nome do personagem">
+      </div>
+    </section>
+
+		<main>
+			<section class="container">
+        <div class="resultado">
+          <table class="tabela-resultado">
+            <thead>
+              <tr>
+                <th width="33%" class="th-personagem">Personagem</th>
+                <th width="33%" class="th-series">Séries</th>
+                <th width="33%" class="th-eventos">Eventos</th>
+              </tr>
+            </thead>
+
+            <tbody id="tabela-personagens"></tbody>
+          </table>
+					<span id="erro-busca" class="erro invisivel">Ocorreu um erro ao carregar a lista, Favor tente abrir o projeto em localhost.</span>
+        </div>
+			</section>
+		</main>
+
+		<script src="assets/js/filtro.js"></script>
+    <script src="assets/js/personagens.js"></script>
+    <script src="assets/js/busca-marvel.js"></script>
+	</body>
+</html>
